@@ -15,17 +15,29 @@
 
         <header>
             <div class="header-top">
-                
+
             </div>
             <nav>
                 <img src="{{ asset('img/dc-logo.png') }}" alt="dc logo">
             </nav>
+            {{-- opzione background dinamico --}}
+            {{-- <div class="jumbotron" style="background-image: url('{{ assets("img/jumbotron.jpg") }}')"> --}}
             <div class="jumbotron">
 
             </div>
         </header>
 
-        <main></main>
+        <main>
+            <div class="container">
+                @foreach ($comicsArray as $comic)
+                    <div class="card">
+                        <img src="{{ $comic['thumb']}}" alt="{{ $comic['title']}}">
+                        <p>{{ $comic['title']}}</p>
+                    </div>  
+                @endforeach
+            </div>
+            {{-- @dump($comicsArray) --}}
+        </main>
 
         <footer></footer>
 

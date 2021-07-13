@@ -14,5 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    // config/comics.php
+    $comics = config('comics');
+    
+    // var_dump($comics);
+    // die();
+
+    // Laravel
+    // dd($comics);
+    // dump($comics);
+
+    // blade(nell'html)
+    // @dump($comicsArray)
+
+    return view('home', 
+        [
+            'comicsArray' => $comics
+        ]
+    );
+    
 });
