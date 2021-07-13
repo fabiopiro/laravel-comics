@@ -7,3 +7,28 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.width-75 {
+    width: 75%;
+    margin: auto;
+}
+
+.list-inline {
+    list-style: none;
+
+    li {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: grey;
+
+            &:hover {
+                color: $mainColor;
+                border-bottom: 5px solid $mainColor;
+            }
+        }
+    }
+}

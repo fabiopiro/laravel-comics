@@ -3,9 +3,13 @@
     background-color: $mainColor;
 }
 
-nav {
+.header-nav {
     height: 100px;
     background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     img {
         height: 75px;

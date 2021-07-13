@@ -10,17 +10,45 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.width-75 {
+  width: 75%;
+  margin: auto;
+}
+
+.list-inline {
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.list-inline li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: grey;
+}
+
+.list-inline li a:hover {
+  color: #0282f9;
+  border-bottom: 5px solid #0282f9;
+}
+
 .header-top {
   height: 25px;
   background-color: #0282f9;
 }
 
-nav {
+.header-nav {
   height: 100px;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav img {
+.header-nav img {
   height: 75px;
   width: 75px;
 }
@@ -30,20 +58,27 @@ nav img {
   background-image: url("/img/jumbotron.jpg");
 }
 
-.container {
+.comics {
   background-color: #1c1c1c;
+  padding: 50px 0;
+}
+
+.comics .container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.container .card {
+.comics .container .card {
   width: calc(100% / 6 - 20px);
   margin: 10px;
-  background-color: red;
 }
 
-.container .card img {
+.comics .container .card img {
   width: 100%;
+}
+
+.comics .container .card p {
+  color: white;
 }
 
 .comics-nav {
