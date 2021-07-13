@@ -7,3 +7,6 @@
     @endforeach
 </div>
 {{-- @dump($comicsArray) --}}
+<nav class="comics-nav">
+
+</nav>

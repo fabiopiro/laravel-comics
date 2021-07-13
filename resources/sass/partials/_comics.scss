@@ -1,12 +1,8 @@
-main {
-    background-color: #1c1c1c;
-}
 .container {
-
+    
+    background-color: #1c1c1c;
     display: flex;
     flex-wrap: wrap;
-
-    
 
     .card {
         width: calc(100% / 6 - 20px);
@@ -18,4 +14,9 @@ main {
         }
 
     }
+}
+
+.comics-nav {
+    height: 100px;
+    background-color: $mainColor;
 }

@@ -25,7 +25,7 @@ Route::get('/', function () {
     // dd($comics);
     // dump($comics);
 
-    // blade(nell'html)
+    // Blade (nell'html)
     // @dump($comicsArray)
 
     return view('home', 

@@ -30,11 +30,8 @@ nav img {
   background-image: url("/img/jumbotron.jpg");
 }
 
-main {
-  background-color: #1c1c1c;
-}
-
 .container {
+  background-color: #1c1c1c;
   display: flex;
   flex-wrap: wrap;
 }
@@ -47,5 +44,20 @@ main {
 
 .container .card img {
   width: 100%;
+}
+
+.comics-nav {
+  height: 100px;
+  background-color: #0282f9;
+}
+
+.footer-top {
+  background-image: url("/img/footer-bg.jpg");
+  height: 400px;
+}
+
+.footer-bottom {
+  height: 100px;
+  background-color: #303030;
 }
 
