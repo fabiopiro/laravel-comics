@@ -1,1 +1,11 @@
-//
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// import variables
+@import 'partials/variables.scss';
+
+// import common
+@import 'partials/common.scss';
+
+// import header
+@import 'partials/header.scss';
